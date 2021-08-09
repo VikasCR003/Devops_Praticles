@@ -1,0 +1,36 @@
+2021-08-09 19:12:49,260 p=2570 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: webserver
+
+2021-08-09 19:12:49,261 p=2570 u=root n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2021-08-09 19:13:55,566 p=2584 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: ip-172-31-62-102.ec2.internal
+
+2021-08-09 19:13:55,567 p=2584 u=root n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2021-08-09 19:14:05,334 p=2591 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: ip-172-31-62-102
+
+2021-08-09 19:14:05,334 p=2591 u=root n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2021-08-09 19:14:17,928 p=2599 u=root n=ansible | ip-172-31-10-175.ec2.internal | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'ip-172-31-10-175.ec2.internal,172.31.10.175' (ECDSA) to the list of known hosts.\r\nroot@ip-172-31-10-175.ec2.internal: Permission denied (publickey).", 
+    "unreachable": true
+}
+2021-08-09 19:14:36,752 p=2612 u=root n=ansible | ip-172-31-10-175.ec2.internal | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: root@ip-172-31-10-175.ec2.internal: Permission denied (publickey).", 
+    "unreachable": true
+}
+2021-08-09 19:16:43,028 p=2635 u=root n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host ip-172-31-62-102.ec2.internal should
+ use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more
+ information. This feature will be removed in version 2.12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-08-09 19:16:43,029 p=2635 u=root n=ansible | ip-172-31-62-102.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
