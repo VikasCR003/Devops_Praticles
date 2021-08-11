@@ -1,1 +1,2 @@
+[webservers]
 ip-172-31-62-102.ec2.internal

@@ -1,0 +1,12 @@
+---
+# Header section
+   - name: This is yaml file is to copy a file from ansible server to node server
+     hosts: webservers
+# Task Section
+     tasks: 
+       - name: copying a file
+         copy:
+           src: /opt/samplefiles/file.txt
+           dest: /opt/fromansible/
+           mode: 0644 
+
