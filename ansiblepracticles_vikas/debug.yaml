@@ -9,12 +9,9 @@
       debug:
         var: "{{item}}"
       with_items: "{{information}}"
-    - name: This task is to copy the ansible facts from tmp to home location
+    - name: This task is to copy a file from tmp to home location
       copy:
-        src: /tmp/anisblefacts.txt
+        src: /tmp/ansiblefacts.txt
         dest: /opt/fromansible
+        owner: root
         mode: 0744
-        owner: vikas 
-        group: vikas
-
-                     
